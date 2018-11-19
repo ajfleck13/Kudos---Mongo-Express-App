@@ -20,11 +20,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="container" style="background-color:aqua;">
-        <h1>Tiny Improvements</h1>
+    <div class="container bg-info">
+        <h1><strong>Tiny Improvements</strong></h1>
+        <hr>
         <div class="row">
             <div class="col-3">
-                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#kudosModal">Submit New Kudos</button>
+                <div class="card">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#kudosModal">Submit New Kudos</button>
+                    </div>
+                </div>
             </div>
             <div class="col-9" id="kudosList"></div>
         </div>
@@ -39,14 +44,18 @@
                 <div class="modal-body">
                     <div class="container">
                         <div class="row">
-                            <div class="col-3">
-                                <select id="employeeFromInput" class="btn btn-secondary"></select>
-                                <select id="employeeToInput" class="btn btn-secondary"></select>
+                            <div class="col-3 form-areag">
+                                <div class="selectdiv">
+                                    <select id="employeeFromInput" class="btn btn-secondary"></select>
+                                    <select id="employeeToInput" class="btn btn-secondary"></select>
+                                </div>
                             </div>
                             <div class="col-9">
-                                <input type="text" placeholder="Title" id="titleInput">
-                                <br>
-                                <textarea placeholder="Body" id=bodyInput></textarea>
+                                <div class="centerdiv">
+                                    <input type="text" class="fullwidth" placeholder="Title" id="titleInput">
+                                    <br>
+                                    <textarea placeholder="Body" class="fullwidth" id=bodyInput></textarea>
+                                </div>
                             </div>
                         </div>
                     </div>

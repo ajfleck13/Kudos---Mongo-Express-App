@@ -5,3 +5,19 @@
 .kudoscard {
     margin-bottom: 10px;
 }
+
+.fullwidth {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+/* .centerdiv {
+    margin: 0 auto;
+} */
+
+.selectdiv {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
