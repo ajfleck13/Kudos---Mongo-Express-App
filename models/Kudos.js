@@ -19,6 +19,6 @@ var KudosSchema = new Schema({
   }
 });
 
-const Kudos = mongoose.model("BlogPost", KudosSchema);
+const Kudos = mongoose.model("Kudos", KudosSchema);
 
 module.exports = Kudos;

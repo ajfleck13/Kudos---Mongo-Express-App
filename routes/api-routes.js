@@ -2,7 +2,7 @@ const db = require('../models');
 
 module.exports = function (app) {
 
-  app.get('/api/user', function (req, res) {
+  app.get('/api/employee', function (req, res) {
     db.Employee.find({})
       .then(function (data) {
         res.json(data);
@@ -13,7 +13,7 @@ module.exports = function (app) {
   });
 
 
-  app.post('/api/user', function (req, res) {
+  app.post('/api/employee', function (req, res) {
     db.Employee.create(req.body)
       .then(function (data) {
         res.json(data);
@@ -22,10 +22,6 @@ module.exports = function (app) {
         res.json(err);
       });
   });
-
-  // Add a PUT Route that will update a User based on Id
-
-  // Add a DELETE Route that will delete a User based on Id
 
   app.get('/api/kudos', function (req, res) {
     db.Kudos.find({})
@@ -48,9 +44,4 @@ module.exports = function (app) {
         res.json(err);
       });
   });
-
-  // Add a PUT Route that will update a BlogPost based on Id
-
-  // Add a DELETE Route that will delete a BlogPost based on Id
-
 }
