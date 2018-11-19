@@ -25,7 +25,8 @@ module.exports = function (app) {
 
   app.get('/api/kudos', function (req, res) {
     db.Kudos.find({})
-      .populate('Employee')
+      .populate('employeeTo')
+      .populate('employeeFrom')
       .then(function (data) {
         res.json(data);
       })
